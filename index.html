@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <!-- <link href="https://fonts.googleapis.com/css?family=Rubik:900" rel="stylesheet" /> -->
+        <!-- <link rel="stylesheet" href="//db.onlinewebfonts.com/c/bb653eaa70b7662cd2bd5dba28d32643?family=SlimSansSerif" type="text" /> -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div class="word-container">
+            <!-- <div class="word-container-background"></div> -->
+
+            <svg class="word-container-background" width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="280" height="280" fill="url(#paint0_linear)" />
+                <defs>
+                    <linearGradient id="paint0_linear" x1="280" y1="0" x2="0" y2="280" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FF006B" />
+                        <stop offset="1" stop-color="#AD1EC3" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+            <svg class="words" viewBox="0 0 300 300">
+                <text class="word1" x="30%" y="35%">MODERN</text>
+                <text class="word2" x="7%" y="55%">DESIGN</text>
+                <text class="word3" x="25%" y="68%">CREATIVE</text>
+            </svg>
+
+            <svg class="wordsMasked" stroke-width="6" stroke="#myGradient" viewBox="0 0 300 300">
+                <defs>
+                    <linearGradient id="myGradient">
+                        <stop offset="0%" stop-color="#f5025f" />
+                        <stop offset="100%" stop-color="#9d035f" />
+                    </linearGradient>
+                </defs>
+                <text class="word1Masked wordMasked" x="30%" y="35%" fill="white">MODERN</text>
+                <text class="word2Masked wordMasked" x="7%" y="55%" fill="white">DESIGN</text>
+                <text class="word3Masked wordMasked" x="25%" y="68%" fill="url('#myGradient')">
+                    CREATIVE
+                </text>
+            </svg>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
